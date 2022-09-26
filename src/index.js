@@ -11,7 +11,7 @@ const client = new ApolloClient({
   version: "1.0",
   cors: {
     credentials: true,
-    origin: ["https://xia-client-catstronauts.herokuapp.com/", "https://studio.apollographql.com"]
+    origin: ["https://client-catstronauts1111.herokuapp.com/", "https://studio.apollographql.com"]
   },
 });
 
