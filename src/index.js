@@ -5,10 +5,14 @@ import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://server-catstronauts.herokuapp.com/", // change to YOUR own production server
+  uri: "https://server-catstronauts-1111.herokuapp.com/", // change to YOUR own production server
   cache: new InMemoryCache(),
   name: "web",
   version: "1.0",
+  cors: {
+    credentials: true,
+    origin: ["https://xia-client-catstronauts.herokuapp.com/", "https://studio.apollographql.com"]
+  },
 });
 
 ReactDOM.render(
